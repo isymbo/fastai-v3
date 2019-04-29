@@ -1,2 +1,3 @@
 *.pth
 Dockerfile
+docker-compose.yml

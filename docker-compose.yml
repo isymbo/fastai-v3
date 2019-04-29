@@ -1,0 +1,10 @@
+version: '3.2'
+
+services:
+  lesson2:
+    image: fastai:lesson2
+    volumes:
+      - ./models:/app/models
+    restart: always
+    ports:
+      - 5042:5042

@@ -1,7 +1,14 @@
-# Starter for deploying [fast.ai](https://www.fast.ai) models on [Render](https://render.com)
+# Starter for deploying [fast.ai](https://www.fast.ai) models on your own cloud server(linux for example).
 
-This repo can be used as a starting point to deploy [fast.ai](https://github.com/fastai/fastai) models on Render.
+This repo can be used as a starting point to deploy
+[fast.ai](https://github.com/fastai/fastai) models on your own server.
 
-The sample app described here is up at https://fastai-v3.onrender.com. Test it out with bear images!
+Make sure you have installed docker and docker-compose before following steps
+blow.
 
-The guide for production deployment to Render is at https://course.fast.ai/deployment_render.html.
+* cd into the directory of the repo
+* put your trained model file (*.pth) under ./app/models
+* run ```docker build -t fastai:lesson2 .```
+* run ```docker-compose up -d```
+
+Then you should be able to access the application on http://**yourhostip**:5042
